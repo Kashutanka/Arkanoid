@@ -1,13 +1,34 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Arkaoid</title>
     <link rel="stylesheet" href="styles.css">
+    <script defer src="script.js"></script>
 </head>
+
 <body>
-    <canvas id="arkanoid" width="480" height="320"></canvas>
-    <script src="script.js"></script>
+    <header>
+        <h1>Арканоид</h1>
+    </header>
+    <div class="game">
+        <pre>
+Управляй платформой, отбивай шарик и разрушай кирпичи.
+
+🕹 Управление:
+Двигай платформу влево и вправо при помощи мыши
+Пробел — начать игру
+
+Сколько блоков сможешь разбить ты?</pre>
+        <canvas id="arkanoid" width="480" height="320"></canvas>
+        <p id="gameWin">Вы победили! Нажмите <button onclick="location.reload()">сюда</button> если хотите сыграть еще
+            раз.</p>
+        <p id="gameOver">Упс, вы проиграли! Нажните <button onclick="location.reload()">сюда</button> чтобы начать
+            заново.</p>
+    </div>
 </body>
+<footer>Сделано под каштаном. 2025 &copy;</footer>
+
 </html>
